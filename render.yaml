@@ -2,7 +2,7 @@ services:
   - type: static_site
     name: Moon
     buildCommand: "cd apps/web && pnpm install && pnpm build"
-    publishPath: apps/web/dist
+    publishPath: apps/web/webapp
     envVars:
       - key: NODE_VERSION
         value: "22"
